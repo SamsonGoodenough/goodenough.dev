@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap');
+
+$theme-dark: #0e0a08;
+$theme-accent-100: #F2368C;
+$theme-accent-200: #BF045B;
+$theme-accent-300: #8C0327;
+$theme-accent-400: #590111;
+$theme-light: #F5F5F5;
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $theme-dark;
+  color: $theme-light;
+
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+
+  height: 100vh;
+  margin: 0;
+}
+
+#app {
+  height: 100%;
+}
+
+.hero {
+  display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+  height: 100vh;
+  padding-inline: 15%;
+
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-block: 0.2rem;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-block: 0.1rem;
+
+  }
+  .highlight {
+    color: $theme-accent-100;
+  }
+}
